@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopX - Our Products</title>
+    <style>
+        body {
+            font-family:sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: white;
+            width: 250px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+        }
+
+        .product:hover {
+            box-shadow: 0 8px 16px rgba(47, 151, 203, 0.2);
+            transform: translateY(-10px);
+        }
+
+        .product img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+        }
+
+        .product-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-details h3 {
+            font-size: 25px;
+            color: #2c3e50;
+        }
+
+        .product-details p {
+            font-size: 22px;
+            color: #16a085;
+        }
+
+        .product-details button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-details button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer a:hover {
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    <!-- Products Section -->
+    <div class="products">
+        <div class="product">
+            <img src="download.jfif" alt="Product 1">
+            <div class="product-details">
+                <h3>Iphone 14 plus</h3>
+                <p> ₹54,400
+                    
+                </p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="head.jpeg" alt="Product 2">
+            <div class="product-details">
+                <h3>Apple AirPods MAX</h3>
+                <p> ₹59,900</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="sw.jpeg" alt="Product 3">
+            <div class="product-details">
+                <h3>Apple Watch SE</h3>
+                <p> ₹24,399</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="lp.jfif" alt="Product 4">
+            <div class="product-details">
+                <h3>MacBook pro</h3>
+                <p> ₹2,39,990</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="air.jpeg" alt="Product 3">
+            <div class="product-details">
+                <h3>AirPods Pro</h3>
+                <p>₹19,990</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="pc.jpeg" alt="Product 3">
+            <div class="product-details">
+                <h3>Imac 5K</h3>
+                <p>₹1,68,630</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="apple vision pro.jpeg" alt="Product 3">
+            <div class="product-details">
+                <h3>Apple Vision Pro</h3>
+                <p>₹3,40,000</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div> <div class="product">
+            <img src="ipad pro.jpeg" alt="Product 3">
+            <div class="product-details">
+                <h3>Ipad Pro 11</h3>
+                <p>₹99,900</p>
+                <button onclick="window.location.href='cart.html'">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+   
+    <footer>
+        <p>&copy; 2025 ShopX | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a></p>
+    </footer>
+
+</body>
+</html>

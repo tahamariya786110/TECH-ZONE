@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Cart</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2980b9;
+        }
+
+        .checkout-container {
+            background-color: white;
+            padding: 40px;
+            margin: 30px auto;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-size: 18px;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+        }
+
+        .form-group button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+
+    
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="cart.html">Cart</a>
+    </nav>
+
+    
+    <div class="checkout-container">
+        <h2>Checkout</h2>
+        <form action="#" method="POST">
+           
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="4" required></textarea>
+            </div>
+
+           
+            <div class="form-group">
+                <label>Payment Method:</label><br>
+                <input type="radio" id="cash" name="payment" value="cash" checked>
+                <label for="cash">Cash on Delivery</label><br>
+                <input type="radio" id="online" name="payment" value="online">
+                <label for="online">Online Payment</label>
+            </div>
+
+            
+            <div class="form-group">
+                <button type="submit">Place Order</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
